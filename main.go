@@ -32,7 +32,7 @@ func getEmpenhoData(year int, pagina int, cn chan Job) {
 		return
 	}
 
-	req.Header.Add("Authorization", "Bearer 4abf361f8c520e74728a0d51817bc4")
+	req.Header.Add("Authorization", "REPLACE")
 	req.Header.Add("Cache-Control", "no-cache")
 
 	res, err := http.DefaultClient.Do(req)
